@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b7bb3"/>
+      <stop offset="1" stop-color="#1e4469"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dfe5ec"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#bg)"/>
+  <!-- floor grid -->
+  <g stroke="#9fc1e0" stroke-width="14" stroke-linecap="round" opacity="0.55">
+    <line x1="170" y1="800" x2="854" y2="800"/>
+  </g>
+  <!-- lever on the right -->
+  <rect x="790" y="430" width="70" height="300" rx="16" fill="#c9d6e3" opacity="0.9"/>
+  <rect x="700" y="520" width="120" height="34" rx="14" fill="#f2b84b"/>
+  <!-- tail -->
+  <path d="M300 690 C 200 720, 160 640, 210 590 C 250 550, 230 500, 180 480" fill="none" stroke="#f4a9b8" stroke-width="26" stroke-linecap="round"/>
+  <!-- body -->
+  <path d="M290 720 C 250 600, 330 470, 470 450 C 590 432, 680 500, 690 600 C 700 690, 640 740, 520 745 L 360 745 C 320 745, 300 735, 290 720 Z" fill="url(#fur)" stroke="#2a3e55" stroke-width="10"/>
+  <!-- hind foot -->
+  <ellipse cx="390" cy="752" rx="70" ry="22" fill="#f4a9b8" stroke="#2a3e55" stroke-width="8"/>
+  <!-- head -->
+  <path d="M560 470 C 610 380, 700 380, 790 450 C 805 462, 806 478, 790 486 C 730 520, 640 560, 590 560 C 540 560, 530 510, 560 470 Z" fill="url(#fur)" stroke="#2a3e55" stroke-width="10"/>
+  <!-- ear -->
+  <ellipse cx="610" cy="400" rx="52" ry="62" fill="#ffffff" stroke="#2a3e55" stroke-width="10"/>
+  <ellipse cx="612" cy="404" rx="32" ry="40" fill="#f4a9b8"/>
+  <!-- eye, nose -->
+  <circle cx="700" cy="450" r="17" fill="#c0283f"/>
+  <circle cx="705" cy="444" r="6" fill="#ffffff"/>
+  <circle cx="797" cy="470" r="15" fill="#f07a92"/>
+  <!-- whiskers -->
+  <g stroke="#2a3e55" stroke-width="5" stroke-linecap="round" opacity="0.8">
+    <line x1="770" y1="490" x2="850" y2="470"/>
+    <line x1="768" y1="498" x2="852" y2="505"/>
+  </g>
+  <!-- front paws on lever -->
+  <path d="M640 560 C 660 560, 690 545, 710 535" fill="none" stroke="#f4a9b8" stroke-width="24" stroke-linecap="round"/>
+</svg>
