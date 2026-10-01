@@ -2,13 +2,15 @@
 #
 # - Pushing a tag vX.Y.Z (matching the version in package.json) publishes them as a GitHub
 #   Release, so users can download them from the Releases page.
-# - Running the workflow by hand (Actions > Release > Run workflow) only builds them; they can
-#   be downloaded from the run's artifacts.
+# - Running the workflow by hand (Actions > Release > Run workflow), or pushing a change to this
+#   file on any branch, only builds them; they can be downloaded from the run's artifacts.
 name: Release
 
 on:
   push:
     tags: ["v*"]
+    branches: ["**"]
+    paths: [".github/workflows/release.yml"]
   workflow_dispatch:
 
 concurrency:
