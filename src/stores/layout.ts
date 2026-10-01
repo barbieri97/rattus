@@ -62,12 +62,12 @@ export function defaultLayout(width: number, height: number): Record<PanelId, Pa
   return {
     chamber: panel(true, gap, gap, leftW, chamberH, 1),
     cumulative: panel(true, gap, chamberH + gap * 2, leftW, bottomH, 2),
-    operant: panel(true, rightX, gap, rightW, third, 3),
-    behavior: panel(true, rightX, third + gap * 2, rightW, third, 4),
+    operant: panel(true, rightX, gap, rightW, half, 3),
+    behavior: panel(true, rightX, half + gap * 2, rightW, half, 4),
     csStrength: panel(false, rightX, third * 2 + gap * 3, rightW, third, 5),
-    sensitivityFear: panel(false, rightX, gap, rightW, third, 6),
-    suppression: panel(false, rightX, gap, rightW, half, 7),
-    movement: panel(false, rightX, half + gap * 2, rightW, half, 8),
+    sensitivityFear: panel(false, rightX, third + gap * 2, rightW, third, 6),
+    suppression: panel(false, rightX, gap, rightW, third, 7),
+    movement: panel(false, gap, chamberH + gap * 2, leftW, bottomH, 8),
   };
 }
 
