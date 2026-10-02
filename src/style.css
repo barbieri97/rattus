@@ -1,0 +1,105 @@
+:root {
+  --bg: #d9dee5;
+  --panel: #f8f9fb;
+  --panel-border: #9aa6b4;
+  --title: #e6eaef;
+  --title-active: #cfdcec;
+  --text: #1f2a36;
+  --muted: #5d6b7a;
+  --accent: #2f6db3;
+  --accent-text: #ffffff;
+  --danger: #b8404f;
+  --input-border: #aab4c0;
+  --menu: #eef1f5;
+  --menu-hover: #d4e2f3;
+  --shadow: 0 4px 16px rgba(20, 30, 45, 0.18);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #eef3f9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+button.primary:hover:not(:disabled) {
+  background: #285f9c;
+}
+
+input,
+select {
+  font: inherit;
+  color: var(--text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  background: #ffffff;
+  user-select: text;
+}
+
+input[type="number"] {
+  width: 5.5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 4px 0 0;
+  vertical-align: -2px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
